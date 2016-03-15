@@ -1,0 +1,12 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+  	Your title: Your name.                     
+	Site: github.com/holmgr.                          
+	Twitter: @Viktor_Holmgren.
+	Location: Linköping, Sweden.
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3
