@@ -222,8 +222,7 @@ gulp.task('pagespeed', cb =>
 
 gulp.task('deploy', ['default'], () => {
   return gulp.src('dist')
-    .pipe($.subtree())
-    .pipe($.clean());
+    .pipe($.subtree());
 });
 
 // Load custom tasks from the `tasks` directory
