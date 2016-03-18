@@ -220,7 +220,7 @@ gulp.task('pagespeed', cb =>
   }, cb)
 );
 
-gulp.task('deploy', ['build'], () => {
+gulp.task('deploy', ['default'], () => {
   return gulp.src('dist')
     .pipe($.subtree())
     .pipe($.clean());
