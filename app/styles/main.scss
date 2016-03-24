@@ -1,0 +1,41 @@
+
+// Colors
+$highlight-color: #C40079;
+$text-color: #303336;
+
+.wrapper {
+	width: 90vw;
+	margin: 0 auto;
+}
+
+body {
+	font-size: 100%;
+	font-family: 'Karla', sans-serif;
+
+	color: #303336;
+	line-height: 1.6;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-family: 'Pacifico', cursive;
+	color: $highlight-color;
+}
+
+h4 {
+	color: rgba($text-color, 0.4);
+}
+
+a {
+	color: $highlight-color;
+}
+
+header {
+	margin: 5em 0;
+}
+
+.intro {
+	font-weight: 500;
+	font-size: 1.5em;
+	margin-bottom: 3em;
+}
