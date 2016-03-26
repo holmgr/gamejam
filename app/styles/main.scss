@@ -3,7 +3,7 @@
 $highlight-color: #C40079;
 $text-color: #303336;
 
-.wrapper {
+.container {
 	width: 90vw;
 	margin: 0 auto;
 }
@@ -42,7 +42,7 @@ header {
 
 /* Larger tables and laptops/desktop. Limit width for typography purposes */
 @media (min-width:800px) {
-	.wrapper {
+	.container {
 		max-width: 768px;
 		margin: 0 auto;
 	}
