@@ -39,3 +39,11 @@ header {
 	font-size: 1.5em;
 	margin-bottom: 3em;
 }
+
+/* Larger tables and laptops/desktop. Limit width for typography purposes */
+@media (min-width:800px) {
+	.wrapper {
+		max-width: 768px;
+		margin: 0 auto;
+	}
+}
