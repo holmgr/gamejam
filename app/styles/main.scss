@@ -1,6 +1,7 @@
 
 // Colors
 $highlight-color: #C40079;
+$footer-color: #1C1C1E;
 $text-color: #303336;
 
 .container {
@@ -39,6 +40,14 @@ header {
 	font-weight: 500;
 	font-size: 1.5em;
 	margin-bottom: 3em;
+}
+
+footer {
+	margin-top: 2em;
+	padding: 2.5em 0;
+	text-align: center;
+	color: #B3BEBA;
+	background-color: $text-color;
 }
 
 /* Larger tables and laptops/desktop. Limit width for typography purposes */
