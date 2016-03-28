@@ -1,7 +1,7 @@
 
 // Colors
 $highlight-color: #C40079;
-$footer-color: #1C1C1E;
+$footer-color: #B3BEBA;
 $text-color: #303336;
 
 .container {
@@ -46,7 +46,7 @@ footer {
 	margin-top: 2em;
 	padding: 2.5em 0;
 	text-align: center;
-	color: #B3BEBA;
+	color: $footer-color;
 	background-color: $text-color;
 }
 
