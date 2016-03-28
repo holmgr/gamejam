@@ -9,10 +9,11 @@ $text-color: #303336;
 }
 
 body {
+	margin: 0;
 	font-size: 100%;
 	font-family: 'Karla', sans-serif;
 
-	color: #303336;
+	color: $text-color;
 	line-height: 1.6;
 	box-sizing: border-box;
 }
