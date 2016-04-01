@@ -1,8 +1,10 @@
 
 // Colors
-$highlight-color: #C40079;
+$primary-color: #C40079;
+$secondary-color: #efe23e;
 $footer-color: #B3BEBA;
-$text-color: #303336;
+$text-color: #f4f4f6;
+$page-bg: #0b0033;
 
 .container {
 	width: 85vw;
@@ -15,21 +17,22 @@ body {
 	font-family: 'Karla', sans-serif;
 
 	color: $text-color;
+	background-color: $page-bg;
 	line-height: 1.6;
 	box-sizing: border-box;
 }
 
 h1 {
 	font-family: 'Pacifico', cursive;
-	color: $highlight-color;
+	color: $primary-color;
 }
 
 h4 {
-	color: rgba($text-color, 0.4);
+	color: $secondary-color;
 }
 
 a {
-	color: $highlight-color;
+	color: $primary-color;
 }
 
 header {
