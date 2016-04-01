@@ -6,6 +6,15 @@ $footer-color: #B3BEBA;
 $text-color: #f4f4f6;
 $page-bg: #0b0033;
 
+.backdrop {
+	position: absolute;
+	width: 100vw;
+	height: 430px;
+	background-image: url(../images/backdrop.png);
+	background-repeat: repeat-x;
+	z-index: -1;
+}
+
 .container {
 	width: 85vw;
 	margin: 0 auto;
