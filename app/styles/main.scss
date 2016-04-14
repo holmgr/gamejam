@@ -36,12 +36,6 @@ h1 {
 	color: $primary-color;
 }
 
-svg {
-	max-width: 100%;
-	max-height: 70vw; // Ugly ass hack
-	display: block;
-}
-
 h4 {
 	color: $secondary-color;
 }
@@ -51,7 +45,13 @@ a {
 }
 
 header {
-	margin: 5em 0;
+	margin: 3em 0;
+
+	img {
+		max-width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
 }
 
 .intro {
@@ -69,10 +69,18 @@ footer {
 }
 
 /* Larger tables and laptops/desktop. Limit width for typography purposes */
-@media (min-width:800px) {
+@media (min-width:780px) {
 	.container {
 		max-width: 768px;
 		margin: 0 auto;
+	}
+
+	header {
+		margin: 4em 0;
+
+		img {
+			max-width: 80%;
+		}
 	}
 
 	.block {
