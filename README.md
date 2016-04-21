@@ -1,5 +1,5 @@
 # Gamejam
-Prototype for the Liu Game Jam site
+Landing page for LiU Game Jam
 
 ## Development
 This prototype site is using a modified Google Web starter kit as base for the development environment
