@@ -39,6 +39,7 @@ a {
 }
 
 header {
+	text-align: center;
 	margin: 3em 0;
 
 	img {
@@ -52,6 +53,32 @@ header {
 	font-weight: 500;
 	font-size: 1.5em;
 	margin-bottom: 3em;
+}
+
+#mc_embed_signup {
+	padding: 0 0 2em 0;
+	font-family: inherit !important;
+
+	form {
+		padding: 0;
+	}
+
+	label {
+		color: $secondary-color;
+	}
+
+	input.email {
+    font-family: inherit;
+	}
+
+	input.button {
+		font-family: inherit;
+		background-color: $primary-color;
+
+		&:hover, &:focus {
+			background-color: lighten($primary-color, 5%);
+		}
+	}
 }
 
 footer {
