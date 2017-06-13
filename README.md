@@ -25,7 +25,7 @@ To deploy the site to the Github pages, i.e to push the built files to the gh-pa
 gulp deploy
 ```
 
-The built files are both minified and concatinated to improve performance, to build the files locally and not deploying simply run gulp:
+The built files are both minified and concatinated to improve performance, to build the files locally and not deploy simply run gulp:
 
 ```
 gulp
