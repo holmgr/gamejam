@@ -1,12 +1,13 @@
 @import "_pocketgrid.scss";
 @import "_mailchimpembed.scss";
+@import "fonts.css";
 
 // Colors
-$primary-color: #C40079;
-$secondary-color: #efe23e;
-$footer-color: #B3BEBA;
-$text-color: #f4f4f6;
-$page-bg: #0b0033;
+$primary-color: #ffc600;
+$secondary-color: #ff2520;
+$footer-color: #a0a0a0;
+$text-color: #e0e0e0;
+$page-bg: #101010;
 
 .container {
 	width: 85vw;
@@ -14,8 +15,6 @@ $page-bg: #0b0033;
 }
 
 body {
-	background-image: url(../images/backdrop.png);
-	background-repeat: repeat-x;
 	margin: 0;
 	font-size: 100%;
 	font-family: 'Karla', sans-serif;
@@ -32,13 +31,15 @@ h1 {
 }
 
 h2 {
-	color: $secondary-color;
-	font-weight: 500;
+	font-family: 'BebasNeue-Regular', sans-serif;
+	letter-spacing: 0.05em;
+	color: $text-color;
 	font-size: 2.5em;
 	margin-bottom: 0;
 }
 
 h4, .question {
+	font-weight: 600;
 	color: $secondary-color;
 	font-style: italic;
 }
@@ -49,6 +50,12 @@ h4, .question {
 
 a {
 	color: $primary-color;
+	text-decoration: none;
+
+	&:hover, &:focus {
+		color: lighten($primary-color, 5%);
+		text-decoration: underline;
+	}
 }
 
 header {
@@ -87,6 +94,7 @@ header {
 	input.button {
 		font-family: inherit;
 		background-color: $primary-color;
+		color: darken($primary-color, 30%);
 
 		&:hover, &:focus {
 			background-color: lighten($primary-color, 5%);
@@ -99,7 +107,7 @@ footer {
 	padding: 1em 0;
 	text-align: center;
 	color: $footer-color;
-	background-color: $text-color;
+	background-color: lighten($page-bg, 4%);
 }
 
 /* Larger tables and laptops/desktop. Limit width for typography purposes */
