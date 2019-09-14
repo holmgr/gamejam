@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src: url('http://liugamejam.se/styles/fonts/BebasNeue-Regular.eot');
+    src: url('http://liugamejam.se/styles/fonts/BebasNeue-Regular.woff2') format('woff2'),
+         url('http://liugamejam.se/styles/fonts/BebasNeue-Regular.woff') format('woff'),
+         url('http://liugamejam.se/styles/fonts/BebasNeue-Regular.ttf') format('truetype'),
+         url('http://liugamejam.se/styles/fonts/BebasNeue-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

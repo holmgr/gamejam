@@ -159,6 +159,12 @@ gulp.task('html', () => {
     .pipe(gulp.dest('dist'));
 });
 
+// Copy font files
+gulp.task('fonts', () => {
+  gulp.src('app/styles/fonts/**/*')
+    .pipe(gulp.dest('dist/styles/fonts'))
+});
+
 // Clean output directory
 gulp.task('clean', () => del(['.tmp', 'dist/*', '!dist/.git'], {dot: true}));
 
@@ -182,6 +188,7 @@ gulp.task('serve', ['scripts', 'styles'], () => {
   gulp.watch(['app/styles/**/*.{scss,css}'], ['styles', reload]);
   gulp.watch(['app/scripts/**/*.js'], ['lint', 'scripts']);
   gulp.watch(['app/images/**/*'], reload);
+  gulp.watch(['app/fonts/**/*'], reload);
 });
 
 // Build and serve the output from the dist build
@@ -204,7 +211,7 @@ gulp.task('serve:dist', ['default'], () =>
 gulp.task('default', ['clean'], cb =>
   runSequence(
     'styles',
-    ['lint', 'html', 'scripts', 'images', 'copy'],
+    ['lint', 'html', 'scripts', 'images', 'copy', 'fonts'],
     cb
   )
 );
