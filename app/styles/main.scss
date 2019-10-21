@@ -115,6 +115,13 @@ footer {
 	background-color: lighten($page-bg, 4%);
 }
 
+/* Hide banner in narrow windows and on phones */
+@media (max-width:35em) {
+	body {
+		background-image: none;
+	}
+}
+
 /* Larger tables and laptops/desktop. Limit width for typography purposes */
 @media (min-width:780px) {
 	.container {
