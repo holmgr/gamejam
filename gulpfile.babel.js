@@ -165,6 +165,12 @@ gulp.task('fonts', () => {
     .pipe(gulp.dest('dist/styles/fonts'))
 });
 
+// Copy favicon files
+gulp.task('favicon', () => {
+  gulp.src('app/favicon/**/*')
+    .pipe(gulp.dest('dist/favicon'))
+});
+
 // Clean output directory
 gulp.task('clean', () => del(['.tmp', 'dist/*', '!dist/.git'], {dot: true}));
 
@@ -189,6 +195,7 @@ gulp.task('serve', ['scripts', 'styles'], () => {
   gulp.watch(['app/scripts/**/*.js'], ['lint', 'scripts']);
   gulp.watch(['app/images/**/*'], reload);
   gulp.watch(['app/fonts/**/*'], reload);
+  gulp.watch(['app/favicon/**/*'], reload);
 });
 
 // Build and serve the output from the dist build
@@ -211,7 +218,7 @@ gulp.task('serve:dist', ['default'], () =>
 gulp.task('default', ['clean'], cb =>
   runSequence(
     'styles',
-    ['lint', 'html', 'scripts', 'images', 'copy', 'fonts'],
+    ['lint', 'html', 'scripts', 'images', 'copy', 'fonts', 'favicon'],
     cb
   )
 );
