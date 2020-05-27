@@ -1,4 +1,8 @@
 node_modules/
 .tmp
-dist/
 package-lock.json
+
+# Will break gulp deploy if ignored
+# See https://github.com/Snugug/gulp-subtree/blob/2f12270e9d9159b94233b7494526194fc8f03cb7/README.md
+# Should never be commited though
+!dist/
